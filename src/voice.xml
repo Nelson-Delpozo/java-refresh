@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.0">
+    <form id="get_address">
+        <field name="citystate">
+            <grammar type="application/srgs+xml" src="citystate.grxml"/>
+            <prompt>Say a city and state.</prompt>
+        </field>
+        <field name="street">
+            <grammar type="application/srgs+xml" src="citystate.grxml"/>
+            <prompt> What street are you looking for? </prompt>
+        </field>
+        <filled>
+            <prompt>
+                You chose
+                <value expr="street"/>
+                in
+                <value expr="citystate"/>
+            </prompt>
+            <exit/>
+        </filled>
+    </form>
+</vxml>
